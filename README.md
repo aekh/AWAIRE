@@ -70,8 +70,7 @@ res, minmart, nsamples = audit.audit()
 
 # res is a list of Booleans where res[i] is True iff thresholds[i] has been surpassed
 # minmart is the test supermartingale value of the hardest to reject hypothesis/elimination order
-# nsamples is a list of integers where nsamples[i] is (if res[i] is True) the number of samples 
-#   required to surpass thresholds[i]
+# nsamples is a list of integers where nsamples[i] is (if res[i] is True) the number of samples that was required to surpass thresholds[i]
 ```
 
 After each call to `audit.audit()`, the weights within AWAIRE are updated.
