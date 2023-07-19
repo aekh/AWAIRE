@@ -15,4 +15,23 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # AWAIRE
-AWAIRE
+
+This git repository contains the source code of AWAIRE (Adaptively Weighted Audits of Instant-Runoff Voting Elections).
+
+## Publications
+
+
+
+## Structure
+
+The folder `E-Vote-ID` contains the source code used to generate the results presented in the publication above.
+
+At a later time, a later version (more user-friendly and efficient) of AWAIRE will be published within or linked to from git this repository.
+
+## Requirements
+
+AWAIRE requires: Numpy, Scipy
+
+## Usage
+
+
