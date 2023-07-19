@@ -26,7 +26,7 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 
 The folder `E-Vote-ID` contains the source code used to generate the results presented in the publication above.
 
-At a later time, a later version (more user-friendly and efficient) of AWAIRE will be published within or linked to from git this repository.
+At a later time, a later version (more user-friendly and efficient) of AWAIRE will be published within or (linked to from) this git repository.
 
 ## Requirements
 
