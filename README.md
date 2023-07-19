@@ -20,7 +20,7 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 
 ## Publications
 
-
+* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE". In: Eighth International Joint Conference on Electronic Voting (E-Vote-ID 2023). LNCS. Springer, 2023. Forthcoming.
 
 ## Structure
 
