@@ -75,3 +75,4 @@ res, minmart, nsamples = audit.audit()
 ```
 
 After each call to `audit.audit()`, the weights within AWAIRE are updated.
+Repead step five and six as desired.
