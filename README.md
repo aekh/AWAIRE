@@ -52,7 +52,7 @@ audit = evalueirv.Audit(ballots, reported=w, test=atest, thresholds=[1/0.01])
 
 Fourth, if CVRs are available, initialise AWIARE
 ```
-init = evalueirv.Audit(cvrs, mode="CVR")  # where cvrs of type irvballot.Ballots and contain 
+init = evalueirv.Audit(cvrs, mode="CVR")  # where cvrs is of type irvballot.Ballots and contains 
                                           # the CVRs as observed ballots
 audit.seed_copy(init)
 ```
