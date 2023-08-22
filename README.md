@@ -44,7 +44,7 @@ Second, create an object capable of running statistical tests over ballots (e.g.
 atest = evalueirv.AlphaTest(N=N)  # N is the number of ballots in the election/population
 ```
 
-Third, create a `Audit` object, which 
+Third, create a `Audit` object 
 ```
 # w is the reporder winner and 0.01 is the risk-limit
 audit = evalueirv.Audit(ballots, reported=w, test=atest, thresholds=[1/0.01])
