@@ -26,7 +26,7 @@ amart = AlphaMart(nballots, alpha_d, eta)
 Step 4.
 Create an `Audit` object 
 ```
-audit = Audit(contest, , **{"risklimit": 0.05})
+audit = Audit(contest, amart, **{"risklimit": 0.05})
 ```
 `risklimit` sets the risk limit of the audit.
 
