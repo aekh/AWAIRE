@@ -23,7 +23,7 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 * Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Efficient Weighting Schemes for Auditing Instant-Runoff Voting Elections". In: 9th Workshop on Advances in Secure Electronic Voting (VOTING 2023). LNCS. Springer, 2024. Forthcoming.
   * See folder `Voting-24` for the source code used to generate the results presented in this publication.
 
-* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE". In: 8th International Joint Conference on Electronic Voting (E-Vote-ID 2023). LNCS. Springer, 2023. Forthcoming. Preprint: https://arxiv.org/abs/2307.10972.
+* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE". In: 8th International Joint Conference on Electronic Voting (E-Vote-ID 2023). pp 35–51. LNCS 14230. Springer, 2023. Preprint: https://arxiv.org/abs/2307.10972. DOI: https://doi.org/10.1007/978-3-031-43756-4_3
   * See folder `E-Vote-ID-23` for the source code used to generate the results presented in this publication.
 
 ## Structure
@@ -34,7 +34,7 @@ At a later time, a later version (more user-friendly and efficient) of AWAIRE wi
 
 ## Requirements
 
-AWAIRE requires: `numpy`, `scipy`, (`Voting-24 also requires `universal-portfolios`)
+AWAIRE requires: `numpy`, `scipy`, (`Voting-24` also requires `universal-portfolios`)
 
 ## Usage
 
