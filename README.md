@@ -20,59 +20,22 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 
 ## Publications
 
-* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE". In: Eighth International Joint Conference on Electronic Voting (E-Vote-ID 2023). LNCS. Springer, 2023. Forthcoming. Preprint: https://arxiv.org/abs/2307.10972.
+* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Efficient Weighting Schemes for Auditing Instant-Runoff Voting Elections". In: 9th Workshop on Advances in Secure Electronic Voting (VOTING 2023). LNCS. Springer, 2024. Forthcoming.
+  * See folder `Voting-24` for the source code used to generate the results presented in this publication.
+
+* Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE". In: 8th International Joint Conference on Electronic Voting (E-Vote-ID 2023). LNCS. Springer, 2023. Forthcoming. Preprint: https://arxiv.org/abs/2307.10972.
+  * See folder `E-Vote-ID-23` for the source code used to generate the results presented in this publication.
 
 ## Structure
 
-The folder `E-Vote-ID` contains the source code used to generate the results presented in the publication above.
+Folders `E-Vote-ID-23` and `Voting-24` contains the source code used to generate the respective results presented in the publications above.
 
 At a later time, a later version (more user-friendly and efficient) of AWAIRE will be made available within (or linked to from) this git repository.
 
 ## Requirements
 
-AWAIRE requires: Numpy, Scipy
+AWAIRE requires: `numpy`, `scipy`, (`Voting-24 also requires `universal-portfolios`)
 
 ## Usage
 
-First, create a `Ballots` object, which can observe and tabulate ballots
-```
-ballots = irvballot.Ballots(ncand)  # ncand is the number of candidates
-```
-
-Second, create an object capable of running statistical tests over ballots (e.g., ALPHA)
-```
-atest = evalueirv.AlphaTest(N=N)  # N is the number of ballots in the election/population
-```
-
-Third, create a `Audit` object 
-```
-# w is the reporder winner and 0.01 is the risk-limit
-audit = evalueirv.Audit(ballots, reported=w, test=atest, thresholds=[1/0.01])
-```
-
-Fourth, if CVRs are available, initialise AWIARE
-```
-init = evalueirv.Audit(cvrs, mode="CVR")  # where cvrs is of type irvballot.Ballots and contains 
-                                          # the CVRs as observed ballots
-audit.seed_copy(init)
-```
-
-Fifth, observe ballots
-```
-ballots.observe(ballots.to_code([0,1,2,3]))  # where [0,1,2,3] is the observed ballot strucutred as
-                                             # [first preference, second preference, ...]
-ballots.observe(ballot_code)  # or using ballot encoding directly (if known)
-```
-
-Sixth, run AWAIRE on the sampled ballots
-```
-res, minmart, nsamples = audit.audit()
-
-# res is a list of Booleans where res[i] is True iff thresholds[i] has been surpassed
-# minmart is the test supermartingale value of the hardest to reject hypothesis/elimination order
-# nsamples is a list of integers where nsamples[i] is (if res[i] is True) the number of samples
-#   that was required to surpass thresholds[i]
-```
-
-After each call to `audit.audit()`, the weights within AWAIRE are updated.
-Repeat steps five and six as desired.
+See respective folders for usage.
