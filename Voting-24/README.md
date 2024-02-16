@@ -36,7 +36,7 @@ Create and initialise a frontier
 frontier = Frontier(audit, s, **{"req_parking": 1, "req_pruning": 0, "node_full_start": True})
 frontier.create_frontier()
 ```
-`req_parking`, `req_pruning, and `node_full_start` are experimental parameters and should be left as stated here to obtain the same behaviour as in the paper.
+`req_parking`, `req_pruning`, and `node_full_start` are experimental parameters and should be left as stated here to obtain the same behaviour as in the paper.
 
 Step 6.
 Observe and and process ballots
