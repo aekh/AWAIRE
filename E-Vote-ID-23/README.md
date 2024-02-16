@@ -1,3 +1,5 @@
+# Usage Instructions
+
 First, create a `Ballots` object, which can observe and tabulate ballots
 ```
 ballots = irvballot.Ballots(ncand)  # ncand is the number of candidates
