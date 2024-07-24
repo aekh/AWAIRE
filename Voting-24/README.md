@@ -1,6 +1,6 @@
 # Usage Instructions
 
-**See also `awaire_experiments.py` for example***
+**See also `awaire_experiments.py` for example**
 
 Step 1.
 Import AWAIRE
