@@ -1,5 +1,5 @@
 This file is part of AWAIRE.
-Copyright (C) 2023 Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic
+Copyright (C) 2023-2024 Alexander Ek, Michelle Blom, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic
 
 AWAIRE is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,6 +20,9 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 
 ## Publications
 
+* Alexander Ek, Michelle Blom, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Improving the Computational Efficiency of Adaptive Audits of IRV Elections". 9th International Joint Conference on Electronic Voting (E-Vote-ID 2024). LNCS. Springer, 2024. Forthcoming.
+  * See folder `E-Vote-ID-24` for the source code used to generate the results presented in this publication, along with raw results.
+
 * Alexander Ek, Philip B. Stark, Peter J. Stuckey, and Damjan Vukcevic. "Efficient Weighting Schemes for Auditing Instant-Runoff Voting Elections". In: 9th Workshop on Advances in Secure Electronic Voting (VOTING 2023). LNCS. Springer, 2024. Forthcoming.
   * See folder `Voting-24` for the source code used to generate the results presented in this publication.
 
@@ -28,7 +31,19 @@ This git repository contains the source code of AWAIRE (Adaptively Weighted Audi
 
 ## Structure
 
-Folders `E-Vote-ID-23` and `Voting-24` contains the source code used to generate the respective results presented in the publications above.
+```
+E-Vote-ID-24
+|-- Raw results, and source code used to generate the these results presented in the respective publication above.
+
+Voting-24
+|-- Source code used to generate the results presented in the respective publication above.
+
+E-Vote-ID-23
+|-- Source code used to generate the results presented in the respective publication above.
+
+datafiles
+|-- Some datafiles used for the E-Vote-ID-24 results.
+```
 
 At a later time, a later version (more user-friendly and efficient) of AWAIRE will be made available within (or linked to from) this git repository.
 
