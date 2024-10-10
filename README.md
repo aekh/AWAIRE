@@ -54,3 +54,12 @@ AWAIRE requires: `numpy`, `scipy`, (`Voting-24` also requires `universal-portfol
 ## Usage
 
 See respective folders for usage.
+
+## Acknowledgement
+
+We thank Ronald Rivest and Vanessa
+Teague for helpful discussions and suggestions.
+
+This work was supported by the
+Australian Research Council (Discovery Project DP220101012, OPTIMA ITTC
+IC200100009) and the U.S. National Science Foundation (SaTC 2228884).
